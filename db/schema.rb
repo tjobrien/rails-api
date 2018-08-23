@@ -10,7 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_08_17_175309) do
+ActiveRecord::Schema.define(version: 2018_08_17_211753) do
+
+  create_table "apps", force: :cascade do |t|
+    t.string "title"
+    t.text "remarks"
+    t.integer "version"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "employees", force: :cascade do |t|
     t.string "name"
@@ -31,6 +39,18 @@ ActiveRecord::Schema.define(version: 2018_08_17_175309) do
     t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "versions", force: :cascade do |t|
+    t.integer "versionable_id"
+    t.string "versionable_type"
+    t.json "resource_old"
+    t.json "resource_new"
+    t.integer "new_version_id"
+    t.integer "previous_version_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["versionable_type", "versionable_id"], name: "index_versions_on_versionable_type_and_versionable_id"
   end
 
 end
