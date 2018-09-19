@@ -1,11 +1,5 @@
-class App < ApplicationRecord
-    #has_many :versions, as: :versionable
+class Mobile < ApplicationRecord
     include Versionable
-    
-   
     after_create :add_version
     after_update :update_version
-
-   
-
 end
