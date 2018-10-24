@@ -17,11 +17,17 @@ RSpec.describe Employee, :type => :model do
       expect(employee).to_not be_valid
       #to make the above test pass, need to add a validation for name to Employee model, when that happens, first example now fails
     end
-    #using shoulda - needed to add configuration to rais_helper.rb
+
+    it "successfully saves a employee in the db" do
+      employee.
+    end
+
+    #using shoulda - needed to add configuration to rails_helper.rb
     describe "Associations" do
         it { should have_many (:hours) }
   
     end
+
       
   end
   # context "it is not valid " do
