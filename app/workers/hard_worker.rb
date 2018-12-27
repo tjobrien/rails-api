@@ -3,6 +3,6 @@ class HardWorker
 
   def perform(name, count)
     # Do something
-    puts '#{name} and #{count}'
+    puts 'HARD WORKER'
   end
 end
