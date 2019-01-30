@@ -53,3 +53,7 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'forest_liana'
+
+gem 'ancestry'
+
+gem 'acts-as-taggable-on', '~> 6.0'

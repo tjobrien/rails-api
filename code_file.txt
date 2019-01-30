@@ -47,3 +47,16 @@ e = Employee.find(3);
 2.5.1 :036 > r.to_json
  => "{\"id\":3,\"name\":\"Radar\",\"created_at\":\"2018-08-17T20:56:21.559Z\",\"updated_at\":\"2018-08-17T20:56:21.559Z\"}"
 
+
+ Sidekiq
+ Background processer for ruby and rails. Default uses app/workers e.g. hard_worker.rb
+ `bundle exec sidekiq`
+ Redis
+ in memory data-structure store used by sidekiq
+ `redis-server` (local)
+
+ActiveJob
+  works with sidekiq or rails default async
+
+
+ClockWork
