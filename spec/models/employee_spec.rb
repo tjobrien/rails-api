@@ -19,7 +19,7 @@ RSpec.describe Employee, :type => :model do
     end
 
     it "successfully saves a employee in the db" do
-      employee.
+      
     end
 
     #using shoulda - needed to add configuration to rails_helper.rb

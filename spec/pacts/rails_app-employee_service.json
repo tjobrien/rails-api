@@ -1,0 +1,33 @@
+{
+  "consumer": {
+    "name": "Rails App"
+  },
+  "provider": {
+    "name": "Employee Service"
+  },
+  "interactions": [
+    {
+      "description": "a request for an employee",
+      "providerState": "an employee exists",
+      "request": {
+        "method": "get",
+        "path": "/employee",
+        "query": ""
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "body": {
+          "name": "Tom"
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "pactSpecification": {
+      "version": "2.0.0"
+    }
+  }
+}

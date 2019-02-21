@@ -1,7 +1,9 @@
 class EmployeeServiceClient
     include HTTParty
-  base_uri 'http://employee-service.com'
+    base_uri 'http://employee-service.com'
+
   def get_employee
-    # Yet to be implemented because we're doing Test First Development...
+    name = JSON.parse(self.class.get("/employee").body)['name']
+    Employee.new(name: name)
   end
 end
