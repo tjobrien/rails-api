@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_01_30_011550) do
+ActiveRecord::Schema.define(version: 2019_02_22_014319) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -86,6 +86,14 @@ ActiveRecord::Schema.define(version: 2019_01_30_011550) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "pets", force: :cascade do |t|
+    t.string "name"
+    t.string "photo_url"
+    t.string "status"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "pictures", force: :cascade do |t|
     t.string "name"
     t.integer "imageable_id"
@@ -143,6 +151,16 @@ ActiveRecord::Schema.define(version: 2019_01_30_011550) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["versionable_type", "versionable_id"], name: "index_versions_on_versionable_type_and_versionable_id"
+  end
+
+  create_table "videos", force: :cascade do |t|
+    t.string "asset"
+    t.string "path"
+    t.string "video_url"
+    t.string "locator"
+    t.string "status"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end

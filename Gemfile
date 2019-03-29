@@ -40,6 +40,7 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.7'
   gem 'shoulda', '~> 3.6'
 end
+gem 'rswag'
 
 group :development do
   gem 'listen', '>= 3.0.5', '< 3.2'
