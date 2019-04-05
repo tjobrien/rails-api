@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   
+  get 'clicks/index'
+  get 'clicks/create'
   mount Rswag::Ui::Engine => '/api-docs'
   mount Rswag::Api::Engine => '/api-docs'
   mount ForestLiana::Engine => '/forest'
@@ -7,4 +9,5 @@ Rails.application.routes.draw do
 
   resources :users
   resources :videos
+  resources :clicks
 end
