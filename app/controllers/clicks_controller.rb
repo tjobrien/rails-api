@@ -15,7 +15,7 @@ class ClicksController < ApplicationController
   end
 
   private
-  #Stron Parameters
+  #Strong Parameters
   def click_params
     params.require(:click).permit(:product_id, :affiliate_id)
   end
