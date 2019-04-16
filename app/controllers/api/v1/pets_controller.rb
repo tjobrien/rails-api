@@ -51,3 +51,5 @@ class Api::V1::PetsController < ApplicationController
 end
 
 # rails generate scaffold_controller api/v1/pets
+
+# https://medium.com/@sushildamdhere/how-to-document-rest-apis-with-swagger-and-ruby-on-rails-ae4e13177f5d
