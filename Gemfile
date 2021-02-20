@@ -60,3 +60,10 @@ gem 'ancestry'
 gem 'acts-as-taggable-on', '~> 6.0'
 
 gem 'twilio-ruby'
+
+# If you use bundler, you can add this line to your Gemfile
+gem 'stripe'
+
+gem 'aws-sdk'
+
+gem 'google_places'

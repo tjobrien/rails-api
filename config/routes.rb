@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   
+  get 'maps/index'
   get 'clicks/index'
   get 'clicks/create'
 
@@ -12,4 +13,6 @@ Rails.application.routes.draw do
   resources :videos
   resources :clicks
   resources :sms
+  resources :stripe
+  resources :maps
 end
