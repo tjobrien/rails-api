@@ -6,7 +6,7 @@ class MapsController < ApplicationController
     zip = params['zip']
     service_type = params["service"]
     
-    key="AIzaSyB79mK-77JBRp222HepPe1eqokXx333FHM"
+    
 
     #0 - format inputs into an address string....+ or URL encoded space TODO
     
