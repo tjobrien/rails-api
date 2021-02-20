@@ -74,9 +74,9 @@ ActiveRecord::Schema.define(version: 2021_02_19_234454) do
   create_table "incidents", force: :cascade do |t|
     t.string "name"
     t.string "zip"
-    t.integer "payment_mode"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "payment_mode"
   end
 
   create_table "lesson_media", force: :cascade do |t|

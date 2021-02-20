@@ -23,8 +23,8 @@ class SmsController < ApplicationController
   end
 
   def show
-    account_sid = 'AC7bc817f4e4002f96c8bf6b3dcf55185d'
-    auth_token = 'bbce4480dc209e021c56f2d8147657f7'
+    account_sid = ''
+    auth_token = ''
     @client = Twilio::REST::Client.new(account_sid, auth_token)
 
 call = @client.calls.create(
