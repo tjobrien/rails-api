@@ -10,7 +10,7 @@ class Incident < ApplicationRecord
   
   private
   def patch_on_ready_core
-    if saved_change_to_name?
+    if saved_change_to_name? #specific to this attribute.
       logger.debug( "name changed");
     else
       logger.debug("Name not changed");
