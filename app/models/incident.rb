@@ -7,6 +7,14 @@ class Incident < ApplicationRecord
   has_many :employees
 
   employee_ids = []
+
+
+  def get_employee_emails
+    #emails = self.employees.map {|e| e.email}
+    emails = employees.map do |e|
+      {email: e.email}
+    end
+  end
   
   private
   def patch_on_ready_core
