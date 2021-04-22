@@ -23,8 +23,9 @@ class Incident < ApplicationRecord
     else
       logger.debug("Name not changed");
     end
+    logger.info("previous changes #{previous_changes}") # TODO why does this fail?
   end
-  logger.info("previous changes #{previous_changes}")
+  
   def get_employee_ids
 
     employee_ids = self.employees.map {|e| e.id}
