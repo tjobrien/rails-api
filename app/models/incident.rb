@@ -24,7 +24,7 @@ class Incident < ApplicationRecord
       logger.debug("Name not changed");
     end
   end
-
+  logger.info("previous changes #{previous_changes}")
   def get_employee_ids
 
     employee_ids = self.employees.map {|e| e.id}
