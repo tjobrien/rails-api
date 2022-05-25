@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   
+  get 'pipeline/index'
+  get 'pipeline/show'
   get 'maps/index'
   get 'clicks/index'
   get 'clicks/create'
